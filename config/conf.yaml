@@ -1,0 +1,16 @@
+BASE:
+  name: get case
+  request:
+    url: https://postman-echo.com/get
+    method: GET
+    headers:
+      Content-Type: application/json
+      User-Agent: python-requests/2.18.4
+  #log等级
+  log_level: "debug"
+  #扩展名
+  log_extension: ".log"
+  test:
+    url: "https://demo-api.apipost.cn/api/demo"
+  mobile: 18289454846
+  ver_code: 123456

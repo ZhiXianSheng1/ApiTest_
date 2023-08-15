@@ -1,0 +1,120 @@
+{
+  "uid": "a6b8c7ceb8747103",
+  "name": "test_login",
+  "fullName": "script.test_code.Test_fuix#test_login",
+  "historyId": "2a202ae1645850cb235c5592813b3016",
+  "time": {
+    "start": 1692216120576,
+    "stop": 1692216120576,
+    "duration": 0
+  },
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [
+    {
+      "name": "get_login_fixture",
+      "time": {
+        "start": 1692216120092,
+        "stop": 1692216120576,
+        "duration": 484
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "stepsCount": 0,
+      "hasContent": false
+    },
+    {
+      "name": "connection_mysql",
+      "time": {
+        "start": 1692216120092,
+        "stop": 1692216120092,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "stepsCount": 0,
+      "hasContent": false
+    }
+  ],
+  "afterStages": [
+    {
+      "name": "get_login_fixture::0",
+      "time": {
+        "start": 1692216120576,
+        "stop": 1692216120576,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "stepsCount": 0,
+      "hasContent": false
+    }
+  ],
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "script"
+    },
+    {
+      "name": "suite",
+      "value": "test_code"
+    },
+    {
+      "name": "subSuite",
+      "value": "Test_fuix"
+    },
+    {
+      "name": "host",
+      "value": "LAPTOP-FH2ACJ7Q"
+    },
+    {
+      "name": "thread",
+      "value": "11776-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "script.test_code"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "a6b8c7ceb8747103.json",
+  "parameterValues": []
+}

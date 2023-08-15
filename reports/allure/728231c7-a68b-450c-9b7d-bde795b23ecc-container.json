@@ -1,0 +1,16 @@
+{
+  "uuid": "a1de5a41-645c-43de-a2ec-8de843ce7530",
+  "children": [
+    "e473afcf-0d54-4374-a6be-70383c4cf8db"
+  ],
+  "befores": [
+    {
+      "name": "connection_mysql",
+      "status": "passed",
+      "start": 1692217970359,
+      "stop": 1692217970359
+    }
+  ],
+  "start": 1692217970359,
+  "stop": 1692217970828
+}

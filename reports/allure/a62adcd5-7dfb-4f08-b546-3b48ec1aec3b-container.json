@@ -1,0 +1,24 @@
+{
+  "uuid": "e46b981c-fd98-4d81-b772-d5a2aa144195",
+  "children": [
+    "606a07f1-a6af-4724-8921-b6985e0a1c62"
+  ],
+  "befores": [
+    {
+      "name": "get_login_fixture",
+      "status": "passed",
+      "start": 1692217970828,
+      "stop": 1692217971218
+    }
+  ],
+  "afters": [
+    {
+      "name": "get_login_fixture::0",
+      "status": "passed",
+      "start": 1692217971218,
+      "stop": 1692217971218
+    }
+  ],
+  "start": 1692217970828,
+  "stop": 1692217971218
+}

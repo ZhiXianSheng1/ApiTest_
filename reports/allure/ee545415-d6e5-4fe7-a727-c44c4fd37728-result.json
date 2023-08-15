@@ -1,0 +1,50 @@
+{
+  "name": "test_one_param[login1]",
+  "status": "passed",
+  "parameters": [
+    {
+      "name": "login",
+      "value": "('李四', 'abcdefg')"
+    }
+  ],
+  "start": 1692217971234,
+  "stop": 1692217971234,
+  "uuid": "a150448b-d9bb-481c-b5f7-a591d20e5c03",
+  "historyId": "89adbd14fcdf8c57615e381d20a3cd3b",
+  "testCaseId": "eda7e1ad70f0e01c0dffb5f0342e1d28",
+  "fullName": "script.test_data.TestA#test_one_param",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "script"
+    },
+    {
+      "name": "suite",
+      "value": "test_data"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestA"
+    },
+    {
+      "name": "host",
+      "value": "LAPTOP-FH2ACJ7Q"
+    },
+    {
+      "name": "thread",
+      "value": "15352-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "script.test_data"
+    }
+  ]
+}

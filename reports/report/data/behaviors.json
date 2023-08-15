@@ -1,0 +1,86 @@
+{
+  "uid": "b1a8273437954620fa374b796ffaacdd",
+  "name": "behaviors",
+  "children": [
+    {
+      "name": "test_login",
+      "uid": "a6b8c7ceb8747103",
+      "parentUid": "b1a8273437954620fa374b796ffaacdd",
+      "status": "passed",
+      "time": {
+        "start": 1692216120576,
+        "stop": 1692216120576,
+        "duration": 0
+      },
+      "flaky": false,
+      "newFailed": false,
+      "newPassed": false,
+      "newBroken": false,
+      "retriesCount": 0,
+      "retriesStatusChange": false,
+      "parameters": [],
+      "tags": []
+    },
+    {
+      "name": "test_login",
+      "uid": "a06f17d089ad2a60",
+      "parentUid": "b1a8273437954620fa374b796ffaacdd",
+      "status": "passed",
+      "time": {
+        "start": 1692216120985,
+        "stop": 1692216120985,
+        "duration": 0
+      },
+      "flaky": false,
+      "newFailed": false,
+      "newPassed": false,
+      "newBroken": false,
+      "retriesCount": 0,
+      "retriesStatusChange": false,
+      "parameters": [],
+      "tags": []
+    },
+    {
+      "name": "test_one_param[login1]",
+      "uid": "fa65aeffc317989f",
+      "parentUid": "b1a8273437954620fa374b796ffaacdd",
+      "status": "passed",
+      "time": {
+        "start": 1692216121000,
+        "stop": 1692216121000,
+        "duration": 0
+      },
+      "flaky": false,
+      "newFailed": false,
+      "newPassed": false,
+      "newBroken": false,
+      "retriesCount": 0,
+      "retriesStatusChange": false,
+      "parameters": [
+        "('李四', 'abcdefg')"
+      ],
+      "tags": []
+    },
+    {
+      "name": "test_one_param[login0]",
+      "uid": "42e0beb17fb91ffd",
+      "parentUid": "b1a8273437954620fa374b796ffaacdd",
+      "status": "passed",
+      "time": {
+        "start": 1692216121000,
+        "stop": 1692216121000,
+        "duration": 0
+      },
+      "flaky": false,
+      "newFailed": false,
+      "newPassed": false,
+      "newBroken": false,
+      "retriesCount": 0,
+      "retriesStatusChange": false,
+      "parameters": [
+        "('张三', '123456')"
+      ],
+      "tags": []
+    }
+  ]
+}
