@@ -29,7 +29,7 @@ headers:
   Authorization: Bearer xxx
 
 #data
-talk:
+news_talk:
   content: 这篇文章写很棒!!
 
 # 账号信息
@@ -43,7 +43,11 @@ users:
 login_data:
   username: '{username}'
   password: '{password}'
-#
+
+#删除数据
+news_delete:
+  "id": 20
+  "comment_id": 98
 ## 用户ID列表
 #user_ids: [1, 2, 3]
 #

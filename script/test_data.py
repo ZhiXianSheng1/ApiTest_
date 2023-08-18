@@ -1,3 +1,5 @@
+import json
+
 import pytest
 
 from common.Requests_util import Request
@@ -38,9 +40,11 @@ def get_news_talk():
                               data=conf_yaml.get_conf_data())
     return re
 
-# @pytest.fixture
-# def get_news_delete():
-#     re = Request.requests_api(methon="get", url= conf_yaml.get_conf_urls()["url_news_delete"],
-#                               headers={'Content-Type': conf_yaml.get_conf_headersC(),
-#                                        'token': Configdata.get_conf_token(Configdata())['token']})
-#     yield re
+
+@pytest.fixture
+def get_news_delete():
+    re = Request.requests_api(method="delete", url=conf_yaml.get_conf_urls()["url_news_delete"],
+                              headers={'Content-Type': conf_yaml.get_conf_headersC(),
+                                       'token': Configdata.get_conf_token(Configdata())['token']},
+                              data=json.dumps(conf_yaml.get_conf_delete()))
+    yield re

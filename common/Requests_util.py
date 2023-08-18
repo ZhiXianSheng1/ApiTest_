@@ -11,7 +11,8 @@ class Request:
             r = requests.get(url, data=data, json=json, headers=headers)
         elif method == "post":
             r = requests.post(url, data=data, json=json, headers=headers)
-
+        elif method == "delete":
+            r = requests.delete(url, data=data, json=json, headers=headers)
         # 2.获取结果内容
         code = r.status_code
         try:
@@ -28,17 +29,16 @@ class Request:
 
     # 3、重构get/post方法
     # get
-    # 1.定义方法
+    # 1.定义方法# 2.定义参数:url,headers,json,cookies,method 3.调用公共方法
     def get(self, url, **kwargs):
-        # 2.定义参数
-        # url,headers,json,cookies,method
-        # 3.调用公共方法
         return self.requests_api(url, method="get", **kwargs)
 
     # post
-    # 1.定义方法
+    # 1.定义方法# 2.定义参数:url,headers,json,cookies,method 3.调用公共方法
     def post(self, url, **kwargs):
-        # 2.定义参数
-        # url,headers,json,cookies,method
-        # 3.调用公共方法
         return self.requests_api(url, method="post", **kwargs)
+
+    # delete
+    # 1.定义方法# 2.定义参数:url,headers,json,cookies,method 3.调用公共方法
+    def delete(self, url, **kwargs):
+        return self.requests_api(url, method="delete", **kwargs)

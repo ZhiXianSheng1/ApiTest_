@@ -90,9 +90,11 @@ class ConfigYaml:  # 读取conf.yaml
 
     # 定义headers获取
     def get_conf_data(self):
-        return self.config["talk"]
+        return self.config["news_talk"]
 
-
+    # 定义headers获取
+    def get_conf_delete(self):
+        return self.config["news_delete"]
 class Configdata:  # 读取data.yaml
     def __init__(self):
         # 初始化yaml读取文件的路径
@@ -105,8 +107,10 @@ class Configdata:  # 读取data.yaml
         """
         return self.config
 
-# if __name__ == '__main__':
-# conf_read = ConfigYaml().get_conf_url()
+
+if __name__ == '__main__':
+    conf_read = ConfigYaml().get_conf_delete()
+    print(conf_read)
 # conf_read1 = ConfigYaml().get_conf_log_extension()
 # conf_read2 = Configdata().get_conf_token()
 # print(conf_read)

@@ -53,19 +53,19 @@ class datab:
         res = requests.post(url=url, data=data, headers=headers)
         return res.json()
 
-    # def news_delete(self):  # 新闻评论删除接口
-    #     url = self.config_url.get_conf_url() + "/delete_comment"
-    #     token = self.config_token.get_conf_token()['token']
-    #     headers = {
-    #         'token': token
-    #     }
-    #     payload = {
-    #         "id": 20,
-    #         "comment_id": 98
-    #     }
-    #     parmas = json.dumps(payload)
-    #     res = requests.delete(url=url, data=parmas, headers=headers)
-    #     return res.json()
+    def news_delete(self):  # 新闻评论删除接口
+        url = self.config_url.get_conf_url() + "/delete_comment"
+        token = self.config_token.get_conf_token()['token']
+        headers = {
+            'token': token
+        }
+        payload = {
+            "id": 20,
+            "comment_id": 98
+        }
+        parmas = json.dumps(payload)
+        res = requests.delete(url=url, data=parmas, headers=headers)
+        return res.json()
 
 
 if __name__ == '__main__':
