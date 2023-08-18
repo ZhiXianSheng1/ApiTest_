@@ -1,4 +1,4 @@
-BASE:
+'BASE':
   name: get case
   request:
     url: https://postman-echo.com/get
@@ -14,3 +14,33 @@ BASE:
     url: "https://demo-api.apipost.cn/api/demo"
   mobile: 18289454846
   ver_code: 123456
+
+# 请求地址
+urls:
+  login: https://api.example.com/login
+  get_user: https://api.example.com/users/{userid}
+
+# 请求头
+headers:
+  Content-Type: application/json
+  Authorization: Bearer xxx
+
+# 账号信息
+users:
+  - username: test1
+    password: 123456
+  - username: test2
+    password: 123456
+
+# 登录请求数据
+login_data:
+  username: '{username}'
+  password: '{password}'
+#
+## 用户ID列表
+#user_ids: [1, 2, 3]
+#
+## 其他公共参数
+#params:
+#  pageSize: 20
+#  timeout: 10000
