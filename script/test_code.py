@@ -1,3 +1,6 @@
+from test_data import get_news_data, get_news_datalists, get_news_delete, get_news_collect, get_news_talk
+
+
 class Test_fuix:
 
     # 调用获得token的接口，确保后续接口能正常调用
@@ -8,7 +11,7 @@ class Test_fuix:
     def test_news_datalists(self, get_news_datalists):
         print(get_news_datalists)
 
-    # 测试新闻内容的接口请求
+    #测试新闻内容的接口请求
     def test_news_data(self, get_news_data):
         print(get_news_data)
 
