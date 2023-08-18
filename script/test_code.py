@@ -4,23 +4,23 @@ class Test_fuix:
     def test_token(self, get_token):
         pass
 
-    #测试新闻列表的接口请求
+    # 测试新闻列表的接口请求
     def test_news_datalists(self, get_news_datalists):
         print(get_news_datalists)
 
-    #测试新闻内容的接口请求
+    # 测试新闻内容的接口请求
     def test_news_data(self, get_news_data):
         print(get_news_data)
 
-    # 测试新闻内容的接口请求
-    def get_news_collect(self, get_news_collect):
+    # 测试收藏新闻内容
+    def test_news_collect(self, get_news_collect):
         print(get_news_collect)
 
-    # 测试新闻内容的接口请求
+    # 测试评论新闻内容
     def test_news_talk(self, get_news_talk):
         print(get_news_talk)
 
-    # 测试新闻评论删除接口
+    # 测试新闻评论删除
     def test_news_delete(self, get_news_delete):
         # assert get_news_delete["status_code"] ==200
         print(get_news_delete)
