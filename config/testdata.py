@@ -1,3 +1,5 @@
+import requests
+
 from common.yaml_util import YamlReader
 from config.Conf import get_config_file
 
@@ -14,12 +16,21 @@ class testdemo:
     def get_ver_code(self):
         return self.config["BASE"]["ver_code"]  # 获取通用ver_code
 
+    def token(self):
+        url = 'https://demo-api.apipost.cn/api/demo/login'
+        data = {
+            "mobile": "18289454846",
+            "ver_code": "123456"
+        }
+        re = requests.post(url=url, data=data)
+        return re
 
 if __name__ == '__main__':
     conf_read = testdemo().get_mobile()
     conf_read1 = testdemo().get_ver_code()
     # conf_read2 = Configdata().get_conf_token()
-
-    print(conf_read)
-    print(conf_read1)
-    print(YamlReader(get_config_file()).read_data())
+    # print(conf_read)
+    # print(conf_read1)
+    # print(YamlReader(get_config_file()).read_data())
+    # t=testdemo()
+    # print(t.token().json())
