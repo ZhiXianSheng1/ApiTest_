@@ -12,7 +12,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(current))
 # print(BASE_DIR)
 # 定义config目录的路径
 _config_path = BASE_DIR + os.sep + "config"  # os.sep 分隔符
-                                                # 定义conf.yaml文件的路径
+# 定义conf.yaml文件的路径
 _config_file = _config_path + os.sep + "conf.yaml"
 # 定义log文件路径
 _log_path = BASE_DIR + os.sep + "logs"
@@ -20,12 +20,18 @@ _log_path = BASE_DIR + os.sep + "logs"
 # 定义data.yaml文件路径
 _data_token = BASE_DIR + os.sep + "data.yaml"
 
+# 定义test_01.yaml文件路径
+_test_01 = _config_path + os.sep + "test_01.yaml"
+
+
 def get_log_path():
     """
     获取log文件路径
     :return:
     """
     return _log_path
+
+
 def get_datayaml_file():
     """
     获取data.yaml文件路径
@@ -42,6 +48,8 @@ def get_config_file():
     return _config_file
 
 
+def get_test01_file():
+    return _test_01
 # 2.读取配置文件
 # 创建类
 class ConfigYaml:  # 读取conf.yaml
@@ -110,10 +118,10 @@ class Configdata:  # 读取data.yaml
 
 if __name__ == '__main__':
     conf_read = ConfigYaml().get_conf_delete()
-    print(conf_read)
-# conf_read1 = ConfigYaml().get_conf_log_extension()
+    # print(conf_read)
+    # conf_read1 = ConfigYaml().get_conf_log_extension()
 # conf_read2 = Configdata().get_conf_token()
-# print(conf_read)
+    print(YamlReader(get_test01_file()).read_data())
 # print(YamlReader(get_config_file()).read_data())
 # print(YamlReader(get_datayaml_file()).read_data())
 # print(conf_read1)

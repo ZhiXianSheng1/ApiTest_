@@ -18,7 +18,7 @@
 urls:
   url_news_login: https://demo-api.apipost.cn/api/demo/login
   url_news_datalist: https://demo-api.apipost.cn/api/demo/news_list?mobile=18289454846&theme_news=国际新闻&page=1&pageSize=20
-  url_news_data: https://demo-api.apipost.cn/api/demo/news_list?mobile=18289454846&theme_news=国际新闻&page=1&pageSize=20
+  url_news_data: https://demo-api.apipost.cn/api/demo/news_details?id=20&status=1
   url_news_collect: https://demo-api.apipost.cn/api/demo/collect_news
   url_news_talk: https://demo-api.apipost.cn/api/demo/news_comment?id=20&content=这篇文章写很棒!!
   url_news_delete: https://demo-api.apipost.cn/api/demo/delete_comment

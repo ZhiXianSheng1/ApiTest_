@@ -1,6 +1,5 @@
 from test_data import get_news_data, get_news_datalists, get_news_delete, get_news_collect, get_news_talk
-
-
+from demo import get_datalists
 class Test_fuix:
 
     # 调用获得token的接口，确保后续接口能正常调用
@@ -29,7 +28,7 @@ class Test_fuix:
         print(get_news_delete)
 # if __name__ == '__main__':
 #     Test_fuix().get_login_fixture()
-
-'''
-request 是 pytest的内置fixture
-'''
+#
+#
+# def test_newslists(get_datalists):
+#     print(get_datalists)

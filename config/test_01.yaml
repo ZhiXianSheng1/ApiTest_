@@ -1,0 +1,21 @@
+- featrue: 模块
+  story: 新闻接口列表
+  title: 测试接口请求
+  request:
+    method: get
+    url: https://demo-api.apipost.cn/api/demo/news_list?mobile=18289454846&theme_news=国际新闻&page=1&pageSize=20
+    headers:
+      'Content-Type': application/json
+      token: access_token
+    params: null
+
+- featrue: 模块
+  story: 新闻接口内容
+  title: 测试接口请求
+  request:
+    method: get
+    url: https://demo-api.apipost.cn/api/demo/news_details?id=20&status=1
+    headers:
+      'Content-Type': application/json
+      token: access_token
+    params: null
