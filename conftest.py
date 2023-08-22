@@ -3,36 +3,19 @@ import pytest
 from common.Requests_util import Request
 from common.yaml_util import YamlReader
 from config.Conf import get_datayaml_file, ConfigYaml
+from common import ParameterPool
+from common.FilePath_util import FilePath
 
-conf = ConfigYaml()
-mobile1 = conf.get_conf_mobile()
-ver_code1 = conf.get_conf_vercode()
-
-
+fp = FilePath()
+param_pool = ParameterPool(fp.params_filepath())
 # _driver = None
 # 在所有的接口请求之前执行 清理data.yaml 数据
-@pytest.fixture(scope="session", autouse=True)
-def connection_mysql(get_token):
-    token_data = get_token
-    print("之前：连接数据库")
-    yield YamlReader(get_datayaml_file()).clean_yaml(token_data)
+# @pytest.fixture(scope="session", autouse=True)
+# def connection_mysql(get_token):
+#     token_data = get_token
+#     print("之前：连接数据库")
+#     yield YamlReader(get_datayaml_file()).clean_yaml(token_data)
 
-
-@pytest.fixture(scope="session")
-def get_token():
-    mobile = mobile1
-    ver_code = ver_code1
-    re = Request.requests_api(method="post",
-                              url='https://demo-api.apipost.cn/api/demo/login',
-                              data={  # 定义请求数据
-                                  'mobile': mobile,
-                                  'ver_code': ver_code
-                              }
-                              )
-    token_value = re["body"]["data"]["token"]
-    token = {'token': token_value}
-    # write_yaml =YamlReader(get_datayaml_file()).write_yaml(token)
-    return token
 
 # if __name__ == '__main__':
 #     conf =ConfigYaml()

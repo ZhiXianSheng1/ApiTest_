@@ -1,0 +1,54 @@
+接单:
+  featrue: 登录模块
+  story: 新闻登录接口
+  title: 测试接口请求
+  is_run: True
+  request:
+    method: post
+    url: https://demo-api.apipost.cn/api/demo/login
+    headers:
+      'Content-Type': application/json
+    data:
+      mobile: 18289454846
+      ver_code: 123456
+  extract_key:
+    token: $.body.data.token
+  assert_expression:
+    - status_code == $.status_code
+    - code == $.body.code
+
+
+
+用例标题:
+  featrue: 新闻模块
+  story: 新闻接口内容
+  title: 测试接口请求
+  is_run: True
+  request:
+    method: get
+    url: https://demo-api.apipost.cn/api/demo/news_details?id=20&status=1
+    data: null
+    headers:
+      'Content-Type': application/json
+      token: $.token
+  assert_expression:
+    - status_code == $.status_code
+    - code == $.body.code
+
+
+水果标题:
+  featrue: 新闻模块
+  story: 新闻接口内容
+  title: 测试接口请求
+  is_run: True
+  request:
+    method: get
+    url: https://demo-api.apipost.cn/api/demo/news_details?id=20&status=1
+    data: null
+    headers:
+      'Content-Type': application/json
+    token: $.token
+    params: null
+  assert_expression:
+    - status_code == $.status_code
+    - code == $.body.code

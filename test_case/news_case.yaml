@@ -1,0 +1,23 @@
+#用例(名称)标题
+case_name:
+  #接口地址
+  path:
+  #请求方式
+  method:
+  #备注信息
+  remark:
+  #是否运行
+  is_run:
+  #请求参数较多，这里就用原始字典格式，除了提取表达式，其他的都带上引号，预防出错
+  data:
+    { "id": $.tq_data.id,"projectNo": "3223432423","name": $.tq_data.name }
+  #从接口返回结果中提取哪些字段和提取表达式，比如从返回数据提取用户id和name
+  extract_key:
+    id: $.data.id
+    name: $.data.name
+  #断言表达式
+  assert_expression:
+    - i=='1'
+    - cc=='dad'
+    - 12 in '123'
+    - ig in $.lpl.ig

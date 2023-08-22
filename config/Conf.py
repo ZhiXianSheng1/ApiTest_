@@ -4,11 +4,12 @@
 # 获取当前项目的绝对路径
 import os.path
 
+from common.YamlPath import YamlPath
 from common.yaml_util import YamlReader
 
-current = os.path.abspath(__file__)
+current = os.path.abspath(__file__)  # 当前路径
 # print(current)
-BASE_DIR = os.path.dirname(os.path.dirname(current))
+BASE_DIR = os.path.dirname(os.path.dirname(current))  #基础路径
 # print(BASE_DIR)
 # 定义config目录的路径
 _config_path = BASE_DIR + os.sep + "config"  # os.sep 分隔符
@@ -117,12 +118,9 @@ class Configdata:  # 读取data.yaml
 
 
 if __name__ == '__main__':
-    conf_read = ConfigYaml().get_conf_delete()
+    # conf_read = get_datayaml_file()
     # print(conf_read)
     # conf_read1 = ConfigYaml().get_conf_log_extension()
-# conf_read2 = Configdata().get_conf_token()
-    print(YamlReader(get_test01_file()).read_data())
-# print(YamlReader(get_config_file()).read_data())
-# print(YamlReader(get_datayaml_file()).read_data())
-# print(conf_read1)
-# print(conf_read2['token'])
+    # conf_read2 = Configdata().get_conf_token()
+    case_data = YamlPath.yaml_dirpath()['data.yaml']
+    print(case_data)

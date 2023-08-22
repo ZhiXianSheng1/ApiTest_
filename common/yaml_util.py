@@ -1,33 +1,57 @@
 import os
-
+import sys
 import yaml
+from common.YamlPath import YamlPath
 
 
-# 创建类
 class YamlReader:
-    def __int__(self, yamlf):
-        self.yamlf = yamlf
+    _data = None
+    yamlf = None
 
-    def load_yaml(self):
-        with open(self.yamlf, "r") as f:
-            data = yaml.safe_load(f)
-        return data
-
-    # 2.初始化。文件是否存在
-    def __init__(self, yamlf):
-        if os.path.exists(yamlf):
-            self.yamlf = yamlf
-        else:
-            raise FileNotFoundError("文件不存在")
-        self._data = None
+    @classmethod
+    def handle_key_error(cls, e, name):
+        # print(f"错误信息:{e}")
+        sys.exit(1)
 
     # 3.yaml读取
-    def read_data(self):
+    @classmethod
+    def read_data(cls, yamlf):
+        # 2.初始化。文件是否存在
+        if os.path.exists(yamlf):
+            cls.yamlf = yamlf
+        else:
+            raise FileNotFoundError("文件不存在")
+        cls._data = None
         # 第一次调用data,读取yaml文档。如果不是，直接返回之前保存的数据
-        if not self._data:
-            with open(self.yamlf, "rb") as f:
-                self._data = yaml.safe_load(f)
-            return self._data
+        if not cls._data:
+            with open(cls.yamlf, "rb") as f:
+                cls._data = yaml.safe_load(f)
+            return cls._data
+
+    @classmethod
+    def read_yaml1(cls, yamlf):
+        file = open(yamlf, 'r', encoding='utf-8')
+        with file as doc:
+            content = yaml.load(doc, Loader=yaml.Loader)
+            return content
+
+    @classmethod
+    def read_case(cls, yaml_name):
+        if yaml_name not in YamlPath.yaml_dirpath():
+            print('\033[91m' + f"{yaml_name}未定义,请检查!" + '\033[0m')  # 改变打印的颜色
+        try:
+            fp = YamlPath.yaml_dirpath()[yaml_name]
+        except KeyError as e:
+            cls.handle_key_error(e, yaml_name)
+        else:
+            case_data = cls.read_data(YamlPath.yaml_dirpath()[f'{yaml_name}'])
+            # print(case_data)
+
+            for k, v in case_data.items():  # 将yaml第一行的用例标题移到字典里，赋名case_name
+                case_title = k
+                if v['is_run'] == True:
+                    v['case_name'] = case_title
+                    yield v
 
     # 写入
     def write_yaml(self, data):
@@ -38,15 +62,6 @@ class YamlReader:
                 return print("写入出现异常了" + e)
         return data
 
-    # def write_yaml(self,_data):
-    #     with open(self.yamlf,"rb") as f:
-    #         self._data = yaml.dump(f)
-    #     return self._data
-    # # def write_yaml(data):
-    # #     with open(os.getcwd() + '/data.yaml', mode='a', encoding='utf-8') as f:
-    # #         value = yaml.dump(data=data, stream=f, allow_unicode=True)
-    #
-    # 清除
     """
     在clean方法中判断保留token键值对
     优点:

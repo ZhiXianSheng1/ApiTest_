@@ -42,3 +42,25 @@ class Request:
     # 1.定义方法# 2.定义参数:url,headers,json,cookies,method 3.调用公共方法
     def delete(self, url, **kwargs):
         return self.requests_api(url, method="delete", **kwargs)
+"""
+class Requests:
+    @classmethod
+    def get(cls,path):
+        url=
+        headers =
+        print(f"url信息{url},headers信息{headers}")
+        return request.get(url=url,headers=headers).json
+        
+    @classmethod
+    def post(cls,path,data):
+        url=
+        headers =
+        print(f"url信息{url},headers信息{headers},data信息{data}")
+        return request.post(url=url,headers=headers, data=json.dump(data)).json    
+    
+
+
+
+
+
+"""

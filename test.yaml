@@ -1,3 +1,1 @@
-assert:
-  eq:
-    errcode:21022
+token: {{get_token1}}
