@@ -10,7 +10,7 @@ payload = {
 # 发送POST请求
 response = requests.post(url=url, data=payload)
 result = response.json()
-token =
+
 print(result)
 assert result['code'] == 10000
 assert 'token' in result['data']

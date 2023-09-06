@@ -62,7 +62,6 @@ class Get_History:
             else:
                 print('未找到相关测试记录文件，请先执行测试')
 
-
-if __name__ == '__main__':
-    a = Get_History()
-    a.get_history()
+# if __name__ == '__main__':
+#     a = Get_History()
+#     a.get_history()

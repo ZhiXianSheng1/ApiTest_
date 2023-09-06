@@ -17,7 +17,8 @@ class GetReport:
         print("正在复制配置信息文件".center(76, '-'))
 
         # 2、 复制配置文件到json文件中
-        cmd1 = r'D: && cd D:\PycharmProjects\ApiTest\alluer-environment && copy /y environment.properties D:\PycharmProjects\ApiTest\reports\allure\environment.properties'
+        # cmd1 = r'D: && cd D:\PycharmProjects\ApiTest\alluer-environment && copy /y environment.properties D:\PycharmProjects\ApiTest\reports\allure\environment.properties'
+        cmd1 = r'D: ; cd D:\PycharmProjects\ApiTest\alluer-environment ; copy /y environment.properties D:\PycharmProjects\ApiTest\reports\allure\environment.properties'
         os.system(cmd1)
 
         print("正在生成报告".center(76, '-'))
@@ -37,5 +38,5 @@ class GetReport:
 
 
 if __name__ == '__main__':
-    gt = GetReport()
-    print(gt.get_report())
+    # gt = GetReport()
+    GetReport().get_report()

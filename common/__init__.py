@@ -8,7 +8,7 @@ from typing import Optional
 class ParameterPool():
     def __init__(self, filepath) -> None:
         self.filepath = filepath
-        self.parameters = self._load_pool()  # 公共参数池
+        self.parameters = self._load_pool()  # 参数池，保存接口返回参数提取的值，提供给需要的接口请求参数使用
         self.namespace = {}  # 自定义参数池
         self.default_namespace = 'default'  # 默认参数池
 
@@ -20,7 +20,7 @@ class ParameterPool():
             return self.parameters[namespace].get(key)
         raise KeyError(f"{key} 不在{namespace}参数池中")
 
-    def put(self, params: dict, namespace: Optional[str]) -> int:  # namespace工作空间。传值时会分配到自己命名的工作空间，若没有指定，则分配默认空间
+    def put(self, params: dict, namespace: str = None) -> int:  # namespace工作空间。传值时会分配到自己命名的工作空间，若没有指定，则分配默认空间
         # new_parameters =self._load_pool()
         if self.default_namespace not in self.parameters:
             self.parameters[self.default_namespace] = {}
@@ -51,10 +51,12 @@ class ParameterPool():
         if not namespace:
             pickle.dump({}, open(self.filepath, 'wb'))
             logging.info("参数池已全部清空")
+            print("参数池已全部清空")
         else:
             new_parameters.pop(namespace, None)  # 不指定命名空间时,用空字典直接覆盖实现全清空。
             pickle.dump(new_parameters, open(self.filepath, 'wb'))
             logging.info(f"{namespace}的参数池已清空")
+            print(f"{namespace}的参数池已清空")
 
     def print(self, namespace=None):
         new_parameters = self._load_pool()
@@ -104,12 +106,12 @@ param_pool = ParameterPool()
 使用示例
 param_pool.put("token", "abcd1234")
 token = param_pool.get("token")"""
-if __name__ == '__main__':
-    current_dir = os.path.dirname(__file__)
-    file_path = os.path.join(current_dir, "params_pool.ini")
-    pool = ParameterPool(file_path)
-    # pool.clear()
-    pool.print()
-    # pool.get('token','test2')
+# if __name__ == '__main__':
+#     current_dir = os.path.dirname(__file__)
+#     file_path = os.path.join(current_dir, "params_pool.ini")
+#     pool = ParameterPool(file_path)
+#     # pool.clear()
+#     pool.print()
+# pool.get('token','test2')
 #
 #     pool.print()

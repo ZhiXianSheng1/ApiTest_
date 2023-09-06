@@ -1,5 +1,5 @@
-from test_data import get_news_data, get_news_datalists, get_news_delete, get_news_collect, get_news_talk
-from demo import get_datalists
+# from test_data import get_news_data, get_news_datalists, get_news_delete, get_news_collect, get_news_talk
+# from demo import get_datalists
 # class Test_fuix:
 #
 #     # 调用获得token的接口，确保后续接口能正常调用
