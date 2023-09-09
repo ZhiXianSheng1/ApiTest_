@@ -1,0 +1,46 @@
+{
+  "name": "test_main[case_data1]",
+  "status": "passed",
+  "parameters": [
+    {
+      "name": "case_data",
+      "value": "{'featrue': '新闻列表', 'story': '新闻接口内容', 'title': '测试接口请求', 'is_run': True, 'request': {'method': 'get', 'url': 'https://demo-api.apipost.cn/api/demo/news_list?mobile=18289454846&theme_news=国际新闻&page=1&pageSize=20', 'data': {'mobile': '$.testcase_pool.mobile', 'theme_news': '国际新闻', 'page': 1, 'pageSize': 20}, 'headers': {'Content-Type': '$.testcase_code.Content-Type'}, 'token': '$.token', 'params': None}, 'assert_expression': ['status_code == $.status_code', 'code == $.body.code'], 'case_name': '水果标题'}"
+    }
+  ],
+  "start": 1694233796194,
+  "stop": 1694233797069,
+  "uuid": "e55ba0e1-0dd8-4b96-92f0-be6af3eb4b45",
+  "historyId": "30daf13372544834d55964260369d5cb",
+  "testCaseId": "c44e048f680fe99946b48d962ef00c7e",
+  "fullName": "script.test_case#test_main",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "script"
+    },
+    {
+      "name": "suite",
+      "value": "test_case"
+    },
+    {
+      "name": "host",
+      "value": "LAPTOP-FH2ACJ7Q"
+    },
+    {
+      "name": "thread",
+      "value": "11888-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "script.test_case"
+    }
+  ]
+}

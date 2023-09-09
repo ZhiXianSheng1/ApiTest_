@@ -1,0 +1,13 @@
+{
+  "uuid": "e1afd0e1-004a-4b1c-b936-e86182fa18a1",
+  "befores": [
+    {
+      "name": "case_data",
+      "status": "passed",
+      "start": 1694233796194,
+      "stop": 1694233796194
+    }
+  ],
+  "start": 1694233796194,
+  "stop": 1694233797069
+}
