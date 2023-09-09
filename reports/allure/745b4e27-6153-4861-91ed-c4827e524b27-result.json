@@ -7,9 +7,9 @@
       "value": "{'featrue': '登录模块', 'story': '新闻登录接口', 'title': '测试接口请求', 'is_run': True, 'request': {'method': 'post', 'url': 'https://demo-api.apipost.cn/api/demo/login', 'headers': {'Content-Type': 'application/json'}, 'data': {'mobile': 18289454846, 'ver_code': 123456}}, 'extract_request': {'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type'}, 'extract_response': {'status_code': '$.status_code'}, 'assert_expression': ['status_code == $.status_code', 'code == $.body.code'], 'case_name': '接单'}"
     }
   ],
-  "start": 1694233795757,
-  "stop": 1694233796194,
-  "uuid": "4f8e1140-f593-49af-b65d-76a370e51b59",
+  "start": 1694246428362,
+  "stop": 1694246429358,
+  "uuid": "b567ad2c-6a5b-4a1c-8a1a-40858120543a",
   "historyId": "14aafa482506a55fbf118616b330b36a",
   "testCaseId": "c44e048f680fe99946b48d962ef00c7e",
   "fullName": "script.test_case#test_main",
@@ -28,7 +28,7 @@
     },
     {
       "name": "thread",
-      "value": "11888-MainThread"
+      "value": "15180-MainThread"
     },
     {
       "name": "framework",

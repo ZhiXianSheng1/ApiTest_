@@ -1,5 +1,54 @@
 {
   "uid": "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name": "packages",
-  "children": []
+  "children": [
+    {
+      "name": "script.test_case",
+      "children": [
+        {
+          "name": "test_main[case_data0]",
+          "uid": "461ff9c2c57920d0",
+          "parentUid": "c89daa67a28a74c93ee4280b64103133",
+          "status": "passed",
+          "time": {
+            "start": 1694246176890,
+            "stop": 1694246177594,
+            "duration": 704
+          },
+          "flaky": false,
+          "newFailed": false,
+          "newPassed": false,
+          "newBroken": false,
+          "retriesCount": 0,
+          "retriesStatusChange": false,
+          "parameters": [
+            "{'featrue': '登录模块', 'story': '新闻登录接口', 'title': '测试接口请求', 'is_run': True, 'request': {'method': 'post', 'url': 'https://demo-api.apipost.cn/api/demo/login', 'headers': {'Content-Type': 'application/json'}, 'data': {'mobile': 18289454846, 'ver_code': 123456}}, 'extract_request': {'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type'}, 'extract_response': {'status_code': '$.status_code'}, 'assert_expression': ['status_code == $.status_code', 'code == $.body.code'], 'case_name': '接单'}"
+          ],
+          "tags": []
+        },
+        {
+          "name": "test_main[case_data1]",
+          "uid": "8e1f4ecbb64f9f08",
+          "parentUid": "c89daa67a28a74c93ee4280b64103133",
+          "status": "passed",
+          "time": {
+            "start": 1694246177598,
+            "stop": 1694246178000,
+            "duration": 402
+          },
+          "flaky": false,
+          "newFailed": false,
+          "newPassed": false,
+          "newBroken": false,
+          "retriesCount": 0,
+          "retriesStatusChange": false,
+          "parameters": [
+            "{'featrue': '新闻列表', 'story': '新闻接口内容', 'title': '测试接口请求', 'is_run': True, 'request': {'method': 'get', 'url': 'https://demo-api.apipost.cn/api/demo/news_list?mobile=18289454846&theme_news=国际新闻&page=1&pageSize=20', 'data': {'mobile': '$.testcase_pool.mobile', 'theme_news': '国际新闻', 'page': 1, 'pageSize': 20}, 'headers': {'Content-Type': '$.testcase_code.Content-Type'}, 'token': '$.token', 'params': None}, 'assert_expression': ['status_code == $.status_code', 'code == $.body.code'], 'case_name': '水果标题'}"
+          ],
+          "tags": []
+        }
+      ],
+      "uid": "script.test_case"
+    }
+  ]
 }

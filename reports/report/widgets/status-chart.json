@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "uid": "8e1f4ecbb64f9f08",
+    "name": "test_main[case_data1]",
+    "time": {
+      "start": 1694246177598,
+      "stop": 1694246178000,
+      "duration": 402
+    },
+    "status": "passed",
+    "severity": "normal"
+  },
+  {
+    "uid": "461ff9c2c57920d0",
+    "name": "test_main[case_data0]",
+    "time": {
+      "start": 1694246176890,
+      "stop": 1694246177594,
+      "duration": 704
+    },
+    "status": "passed",
+    "severity": "normal"
+  }
+]
