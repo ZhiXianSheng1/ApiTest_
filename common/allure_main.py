@@ -7,10 +7,16 @@ from save_report_history.save_report_history import Get_History
 
 class GetReport:
     def get_report(self):
+        current = os.path.abspath(__file__)  # 当前路径
+        # print(current)
+        BASE_DIR = os.path.dirname(os.path.dirname(current))  # 基础路径
+
         # 1 、 生成json文件
         print("正在生成JSON文件".center(76, '-'))
         # cmd = r"pytest D:\PycharmProjects\ApiTest\main.py " \
-        cmd = r"D: && cd D:\PycharmProjects\ApiTest && pytest --alluredir=D:\PycharmProjects\ApiTest\reports\allure  --clean-alluredir "
+        path1 = BASE_DIR + os.sep + r"reports\allure"
+        print(path1)  # path1=D:\PycharmProjects\ApiTest\reports\allure
+        cmd = rf"D: && cd {BASE_DIR} && pytest --alluredir={path1} --clean-alluredir "
 
         os.system(cmd)
 
@@ -18,12 +24,15 @@ class GetReport:
 
         # 2、 复制配置文件到json文件中
         # cmd1 = r'D: && cd D:\PycharmProjects\ApiTest\alluer-environment && copy /y environment.properties D:\PycharmProjects\ApiTest\reports\allure\environment.properties'
-        cmd1 = r'D: ; cd D:\PycharmProjects\ApiTest\alluer-environment ; copy /y environment.properties D:\PycharmProjects\ApiTest\reports\allure\environment.properties'
+        path2 = BASE_DIR + os.sep + "alluer-environment"
+        path3 = BASE_DIR + os.sep + r"reports\allure\environment.properties"
+        cmd1 = rf'D: ; cd {path2} ; copy /y environment.properties {path3}'
         os.system(cmd1)
 
         print("正在生成报告".center(76, '-'))
         # 3、生成报告
-        cmd2 = r"allure generate D:\PycharmProjects\ApiTest\reports\allure -o D:\PycharmProjects\ApiTest\reports\report --clean "
+        path4 = BASE_DIR + os.sep + r"reports\allure"
+        cmd2 = fr"allure generate {path4} -o {path4} --clean "
         os.system(cmd2)
         print("报告生成完毕！！！！".center(76, '-'))
 
@@ -38,5 +47,5 @@ class GetReport:
 
 
 if __name__ == '__main__':
-    # gt = GetReport()
+    gt = GetReport()
     GetReport().get_report()
