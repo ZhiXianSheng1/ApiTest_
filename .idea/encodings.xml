@@ -3,5 +3,6 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/common/params_pool.config_pool.ini" charset="GB2312" />
     <file url="file://$PROJECT_DIR$/common/params_pool.pkl" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/logs/2023-09-11.log" charset="GBK" />
   </component>
 </project>

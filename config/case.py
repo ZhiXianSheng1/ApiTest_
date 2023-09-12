@@ -1,9 +1,11 @@
 import logging
-
 from common.Assert_util import Assert
-
 from common.ParameterSetting import ParameterSetting
 from common.Requests_util import Request
+"""
+    功能执行页，如request请求获取、断言结果
+
+"""
 
 
 def extract_(api_response, response_data):

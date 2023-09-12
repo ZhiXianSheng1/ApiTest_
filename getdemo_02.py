@@ -7,10 +7,6 @@ import os
 conf = ConfigYaml()
 mobile1 = conf.get_conf_mobile()
 ver_code1 = conf.get_conf_vercode()
-import yaml
-import jinja2
-
-
 def get_token1():
     mobile = mobile1
     ver_code = ver_code1

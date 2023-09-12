@@ -5,11 +5,8 @@ import jinja2
 # 实现接口参数依赖和参数提取的方法
 from jsonpath import jsonpath
 
-from common import ParameterPool
-from common.FilePath_util import FilePath
+from common.log_util import Logger
 from conftest import param_pool
-
-
 class ParameterSetting:
     """
     yaml里的$.token读出来就相当于{"access_token": $.token}
@@ -93,5 +90,5 @@ class ParameterSetting:
         return extract_value
 
 if __name__ == '__main__':
-    # param_pool.clear()
+    param_pool.clear()
     print(param_pool.parameters)

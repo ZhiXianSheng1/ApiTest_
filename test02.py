@@ -1,47 +1,59 @@
-import json
+import logging
 import os
+import time
 
-import requests
 
+class Logger:
+    def __init__(self, log_name='log.log', log_path=None):
+        self.logger = logging.getLogger()
+        self.logger.setLevel(logging.INFO)
 
-class GetReport:
-    def get_report(self):
-        current = os.path.abspath(__file__)  # 当前路径
-        # print(current)
-        BASE_DIR = os.path.dirname(os.path.dirname(current))  # 基础路径
-        path1 = BASE_DIR + os.sep + r"reports\allure"
-        path2 = BASE_DIR + os.sep + "alluer-environment"
-        path3 = BASE_DIR + os.sep + r"reports\allure\environment.properties"
-        path4 = BASE_DIR + os.sep + r"reports\allure"
+        formatter = logging.Formatter('%(asctime)s %(filename)s %(levelname)s %(message)s')
 
-        # 1 、 生成json文件
-        print("正在生成JSON文件".center(76, '-'))
-        # print(path1)  # path1=D:\PycharmProjects\ApiTest\reports\allure
-        cmd = rf"D: && cd {BASE_DIR} && pytest --alluredir={path1} --clean-alluredir "
-        os.system(cmd)
-        print("正在复制配置信息文件".center(76, '-'))
+        self.file_handler = logging.FileHandler(filename=self.make_file_path(log_name, log_path))
+        self.file_handler.setFormatter(formatter)
+        self.logger.addHandler(self.file_handler)
 
-        # 2、 复制配置文件到json文件中
-        # cmd1 = r'D: && cd D:\PycharmProjects\ApiTest\alluer-environment && copy /y environment.properties D:\PycharmProjects\ApiTest\reports\allure\environment.properties'
-        cmd1 = rf'D: ; cd {path2} ; copy /y environment.properties {path3}'
-        os.system(cmd1)
-        print("正在生成报告".center(76, '-'))
+        self.console_handler = logging.StreamHandler()
+        self.logger.addHandler(self.console_handler)
 
-        # 3、生成报告
-        cmd2 = fr"allure generate {path4} -o {path4} --clean "
-        os.system(cmd2)
-        print("报告生成完毕！！！！".center(76, '-'))
+    @staticmethod
+    def make_file_path(log_name, log_path):
+        if log_path:
+            log_dir = log_path
+        else:
+            log_dir = os.path.join(os.path.dirname(__file__), 'logs')
+        if not os.path.exists(log_dir):
+            os.makedirs(log_dir)
+        return os.path.join(log_dir, log_name)
 
-        # 4、 替换历史记录文件
-        print("正在生成历史趋势文件".center(76, '-'))
-        Get_History().get_history()
+    def set_file_level(self, level):
+        self.file_handler.setLevel(level)
 
-    # 5、为报告开启端口，共享查看
-    # print('正在开启端口，分享报告')
-    # cmd3 = r'allure open -h 192.168.81.102 -p 8885 C:\Users\admin\PycharmProjects\pythonProject\Okmarts_test_front\reports'
-    # os.system(cmd3)
+    def set_console_level(self, level):
+        self.console_handler.setLevel(level)
+
+    def my_log(self, **kwargs):
+        level = kwargs.get('log_level')
+        if level:
+            if level.upper() == 'DEBUG':
+                self.logger.setLevel(logging.DEBUG)
+            elif level.upper() == 'INFO':
+                self.logger.setLevel(logging.INFO)
+            elif level.upper() == 'WARNING':
+                self.logger.setLevel(logging.WARNING)
+            elif level.upper() == 'ERROR':
+                self.logger.setLevel(logging.ERROR)
+            else:
+                self.logger.setLevel(logging.INFO)
+
+        return self.logger
 
 
 if __name__ == '__main__':
-    gt = GetReport()
-    GetReport().get_report()
+    Logger.my_log(Logger()).info("this is info log")
+    Logger.my_log(Logger()).warning("阿达asdad")
+    Logger.my_log(Logger(), log_level='ERROR').error("this is error log")
+    # Logger.my_log(Logger()).warning("阿达asdad")
+    # Logger.my_log(log_level='ERROR').error("this 诗词大赛")
+    # Logger.my_log(log_level='ERROR').error("this 诗33词大赛")

@@ -1,11 +1,10 @@
-import codecs
-import logging
 import os
 import pickle
-from typing import Optional
+from common.log_util import Logger
 
 
-class ParameterPool():
+# lg=Logger
+class ParameterPool:
     def __init__(self, filepath) -> None:
         self.filepath = filepath
         self.parameters = self._load_pool()  # 参数池，保存接口返回参数提取的值，提供给需要的接口请求参数使用
@@ -15,18 +14,19 @@ class ParameterPool():
     def get(self, key: str, namespace: str = None):
         if not namespace:
             namespace = self.default_namespace
-        logging.info(f"从{namespace}得到key的值为{key}")
+            Logger.my_log().info(f"从{namespace}得到key的值为{key}")
         if namespace in self.parameters:
             return self.parameters[namespace].get(key)
         raise KeyError(f"{key} 不在{namespace}参数池中")
+        # lg.my_log().warning(f"{key} 不在{namespace}参数池中")
 
     def put(self, params: dict, namespace: str = None) -> int:  # namespace工作空间。传值时会分配到自己命名的工作空间，若没有指定，则分配默认空间
         # new_parameters =self._load_pool()
         if self.default_namespace not in self.parameters:
             self.parameters[self.default_namespace] = {}
-            logging.info("default工作台不存在，进行初始化为{}")
+            Logger.my_log().info("default工作台不存在，进行初始化为{}")
         # print(f"总参数池：{new_parameters}")
-        logging.info("正在写入参数")
+        Logger.my_log().info("正在写入参数")
         if not isinstance(params, dict):  # 判断传入参数类型
             raise TypeError("params参数必须是字典类型")
         if not namespace:  # 没有namespace参数，默认参数池
@@ -39,7 +39,7 @@ class ParameterPool():
         for k, v in params.items():
             self.parameters[namespace][k] = v
             # print(new_parameters[namespace][k])
-            logging.debug(f"保存 {k}={v} 到{namespace}工作池中")
+            Logger.my_log().info(f"保存 {k}={v} 到{namespace}工作池中")
         self._save_pool(self.parameters)
         return len(params)
 
@@ -50,12 +50,12 @@ class ParameterPool():
         new_parameters = self._load_pool()
         if not namespace:
             pickle.dump({}, open(self.filepath, 'wb'))
-            logging.info("参数池已全部清空")
+            Logger.my_log().warning(r"参数池已全部清空")
             print("参数池已全部清空")
         else:
             new_parameters.pop(namespace, None)  # 不指定命名空间时,用空字典直接覆盖实现全清空。
             pickle.dump(new_parameters, open(self.filepath, 'wb'))
-            logging.info(f"{namespace}的参数池已清空")
+            Logger.my_log().warning(f"{namespace}的参数池已清空")
             print(f"{namespace}的参数池已清空")
 
     def print(self, namespace=None):
@@ -65,16 +65,16 @@ class ParameterPool():
             if namespace in new_parameters:
                 for key, value in new_parameters[namespace].items():
                     print(f"{namespace}参数池({key}:{value})")
-                    logging.debug(f"{namespace}参数池{key} = {value}")
+                    Logger.my_log().debug(f"{namespace}参数池{key} = {value}")
             else:
-                logging.debug(f"{namespace}参数池不存在")
+                Logger.my_log().warning(f"{namespace}参数池不存在")
         else:
             print(self._load_pool())
 
     def _save_pool(self, new_params):
         with open(self.filepath, "rb") as f:
             if os.path.getsize(self.filepath) == 0:
-                logging.warning("调用_save_pool时，参数文件为空, 默认返回{}")
+                Logger.my_log().warning("调用_save_pool时，参数文件为空, 默认返回{}")
                 existing_params = {}
             else:
                 existing_params = pickle.load(f)
@@ -91,7 +91,7 @@ class ParameterPool():
         with open(self.filepath, "rb") as f:
             if os.path.getsize(self.filepath) == 0:
                 # 文件空,返回默认空字典
-                logging.warning("调用_load_pool时，参数文件为空, 默认返回{}")
+                Logger.my_log().warning("调用_load_pool时，参数文件为空, 默认返回{}")
                 self.parameters = {}
             else:
                 self.parameters = pickle.load(f)

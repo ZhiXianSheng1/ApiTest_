@@ -37,12 +37,20 @@ class YamlReader:
 
     @classmethod
     def read_case(cls, yaml_name):
+        """
+        eg:遍历data.yaml内容
+    yam = YamlReader().read_case('data.yaml')
+    for i in yam:
+    print(i['mysql'])
+    :param yaml_name:test_case里的yaml文件eg:'data.yaml'
+    :return:
+    """
         if yaml_name not in YamlPath.yaml_dirpath():
-            print('\033[91m' + f"{yaml_name}未定义,请检查!" + '\033[0m')  # 改变打印的颜色
-        try:
-            fp = YamlPath.yaml_dirpath()[yaml_name]
-        except KeyError as e:
-            cls.handle_key_error(e, yaml_name)
+            try:
+                print('\033[91m' + f"{yaml_name}未定义,请检查!" + '\033[0m')  # 改变打印的颜色
+                # fp = YamlPath.yaml_dirpath()[yaml_name]
+            except KeyError as e:
+                cls.handle_key_error(e, yaml_name)
         else:
             case_data = cls.read_data(YamlPath.yaml_dirpath()[f'{yaml_name}'])
             # print(case_data)
@@ -69,9 +77,7 @@ class YamlReader:
     逻辑简单直观
     少量更改现有代码
     缺点:
-    
-    如果有其他重要数据,也需要类似判断
-        
+    如果有其他重要数据,也需要类似判断   
         
     """
 
@@ -83,29 +89,3 @@ class YamlReader:
         with open(self.yamlf, "w") as f:
             yaml.dump(data, f)
         return data
-
-
-"""
-    def clean_yaml(self):
-        data = yaml.load(yamlfile) 
-        data.update({"token": data["token"]})
-  
-        with open(yamlfile, "w") as f:
-            yaml.dump(data, f)
-2.读取旧配置并更新选择内容
-优点:
-
-可以灵活选择保留的键
-clean方法只负责清空
-缺点:
-
-需要处理读取旧配置的逻辑
-更新方式可能不太优雅
-
-"""
-
-# if __name__ == '__main__':
-#     conf =ConfigYaml()
-#     print(ConfigYaml.get_conf_url(conf))
-# ye = YamlReader()
-# ye.clean_yaml(ye)

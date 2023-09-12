@@ -10,7 +10,7 @@ class YamlPath:
         # print(current)
         _testcase_path = BASE_DIR + os.sep + "test_case"
         # print(_testcase_path)
-        for root, dirs, files in os.walk(_testcase_path):
+        for root, dirs, files in os.walk(_testcase_path):  # root 根路径
             for filename in files:
                 if filename.endswith(".yaml"):
                     yaml_file = os.path.join(root, filename)

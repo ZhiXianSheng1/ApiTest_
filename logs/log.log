@@ -1,0 +1,22 @@
+2023-09-11 13:18:29,638 test02.py INFO this is info log
+2023-09-11 13:18:29,638 test02.py WARNING 阿达asdad
+2023-09-11 13:18:29,638 test02.py WARNING 阿达asdad
+2023-09-11 13:18:29,638 test02.py ERROR this is error log
+2023-09-11 13:18:29,638 test02.py ERROR this is error log
+2023-09-11 13:18:29,638 test02.py ERROR this is error log
+2023-09-11 13:18:29,638 test02.py WARNING 阿达asdad
+2023-09-11 13:18:29,638 test02.py WARNING 阿达asdad
+2023-09-11 13:18:29,638 test02.py WARNING 阿达asdad
+2023-09-11 13:18:29,638 test02.py WARNING 阿达asdad
+2023-09-11 13:18:49,680 test02.py INFO this is info log
+2023-09-11 13:18:49,680 test02.py WARNING 阿达asdad
+2023-09-11 13:18:49,680 test02.py WARNING 阿达asdad
+2023-09-11 13:18:49,680 test02.py ERROR this is error log
+2023-09-11 13:18:49,680 test02.py ERROR this is error log
+2023-09-11 13:18:49,680 test02.py ERROR this is error log
+2023-09-11 13:20:09,851 test02.py INFO this is info log
+2023-09-11 13:20:09,851 test02.py WARNING 阿达asdad
+2023-09-11 13:20:09,851 test02.py WARNING 阿达asdad
+2023-09-11 13:20:09,854 test02.py ERROR this is error log
+2023-09-11 13:20:09,854 test02.py ERROR this is error log
+2023-09-11 13:20:09,854 test02.py ERROR this is error log
