@@ -6,17 +6,38 @@
       "name": "LAPTOP-FH2ACJ7Q",
       "children": [
         {
-          "name": "4820-MainThread",
+          "name": "12484-MainThread",
           "children": [
             {
-              "name": "test_main[case_data0]",
-              "uid": "fdc7dc01919216f6",
-              "parentUid": "9832257f776b892b033d28382c93adea",
+              "name": "测试接口请求",
+              "uid": "d788c66e32be2fa6",
+              "parentUid": "7ee084f329c0fe798b245834194ffcd8",
               "status": "passed",
               "time": {
-                "start": 1694531420082,
-                "stop": 1694531420551,
-                "duration": 469
+                "start": 1694543279957,
+                "stop": 1694543281441,
+                "duration": 1484
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "{'featrue': '新闻列表', 'story': '新闻接口内容', 'title': '测试接口请求', 'is_run': True, 'request': {'method': 'get', 'url': 'https://demo-api.apipost.cn/api/demo/news_list?mobile=18289454846&theme_news=国际新闻&page=1&pageSize=20', 'data': {'mobile': '$.testcase_pool.mobile', 'theme_news': '国际新闻', 'page': 1, 'pageSize': 20}, 'headers': {'Content-Type': '$.testcase_code.Content-Type'}, 'token': '$.token', 'params': None}, 'assert_expression': ['status_code == $.status_code', 'code == $.body.code'], 'case_name': '水果标题'}"
+              ],
+              "tags": []
+            },
+            {
+              "name": "测试接口请求",
+              "uid": "c2fcbb17e4b161a6",
+              "parentUid": "7ee084f329c0fe798b245834194ffcd8",
+              "status": "passed",
+              "time": {
+                "start": 1694543278473,
+                "stop": 1694543279957,
+                "duration": 1484
               },
               "flaky": false,
               "newFailed": false,
@@ -30,7 +51,7 @@
               "tags": []
             }
           ],
-          "uid": "9832257f776b892b033d28382c93adea"
+          "uid": "7ee084f329c0fe798b245834194ffcd8"
         }
       ],
       "uid": "9f62856ce7b56527f179e712adbdd340"

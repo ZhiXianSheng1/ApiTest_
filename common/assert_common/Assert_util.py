@@ -1,4 +1,8 @@
 from jsonpath import jsonpath
+
+from common.log_common.log_util import Logger
+
+
 class Assert:
     @classmethod
     def assert_resonse(cls, api_response: dict, assert_list: list):
@@ -14,10 +18,11 @@ class Assert:
                 wz = i.find('$')  # 找到$的位置
                 assert_json_path = i[wz:len(i)]  # 获取[$,最后一个数) 注意括号
                 # print(f"找到$.的位置{assert_json_path}")cod
-                value = jsonpath(api_response, assert_json_path)  # 在api请求里找到这个$.?的值
+                """在api请求里找到这个$.?的值"""
+                value = jsonpath(api_response, assert_json_path)
                 # print(f"键的值{value}")
                 if not value:
-                    # print('表达式提取失败，请检查！')
+                    Logger.my_log(log_level='ERROR').error('表达式提取失败，请检查！')
                     return False
                 value = value[0]  # value只有一个值，取出来
                 # 用值把表达式替换掉(注意这个需要用变量接住这个替换的新值)
@@ -39,10 +44,3 @@ class Assert:
         if False in assert_result_list:
             return False
         return True
-# if __name__ == '__main__':
-#     api_response = {'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5MjU4ODE1NCwiaXNzIjoicHJvOTExIn0.PZfF7FoCXojjd4nRQZEAuFZWhFj1HpLmvPntGCFW8mc'}, 'msg': 'success'}}
-#     # assert_list = ["'12' in '123'", "'ig' == '$.ig'",'2 == 1']
-#     # api_response = {'msg': '请求正常','ig': 'theshy'}
-#
-#     assert_list = ['status_code == $.status_code', 'code == $.body.code']
-#     Assert.assert_resonse(api_response,assert_list)

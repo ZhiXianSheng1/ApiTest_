@@ -1,0 +1,32 @@
+2023-09-13 02:27:49,082 D:\PycharmProjects\ApiTest\common\code\extract_data.py INFO 需要处理的值response_data为{'status_code': '$.status_code'}
+2023-09-13 02:27:49,097 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-13 02:27:49,097 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-13 02:27:49,097 D:\PycharmProjects\ApiTest\common\code\extract_data.py INFO 需要处理的值extract_response为{'status_code': 200}
+2023-09-13 02:27:49,097 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-13 02:27:49,097 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-13 02:27:49,097 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-13 02:27:49,097 D:\PycharmProjects\ApiTest\common\code\extract_data.py INFO 数据extract_response为None
+2023-09-13 02:27:49,800 D:\PycharmProjects\ApiTest\common\code\extract_data.py INFO 需要处理的值response_data为{'status_code': '$.status_code'}
+2023-09-13 02:27:49,800 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-13 02:27:49,800 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-13 02:27:49,800 D:\PycharmProjects\ApiTest\common\code\extract_data.py INFO 需要处理的值extract_response为{'status_code': 200}
+2023-09-13 02:27:49,800 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-13 02:27:49,816 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-13 02:27:49,816 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-13 02:27:49,816 D:\PycharmProjects\ApiTest\common\code\extract_data.py INFO 数据extract_response为None
+2023-09-13 02:27:58,910 D:\PycharmProjects\ApiTest\common\code\extract_data.py INFO 需要处理的值response_data为{'status_code': '$.status_code'}
+2023-09-13 02:27:58,910 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-13 02:27:58,925 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-13 02:27:58,925 D:\PycharmProjects\ApiTest\common\code\extract_data.py INFO 需要处理的值extract_response为{'status_code': 200}
+2023-09-13 02:27:58,925 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-13 02:27:58,925 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-13 02:27:58,925 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-13 02:27:58,925 D:\PycharmProjects\ApiTest\common\code\extract_data.py INFO 数据extract_response为None
+2023-09-13 02:27:59,597 D:\PycharmProjects\ApiTest\common\code\extract_data.py INFO 需要处理的值response_data为{'status_code': '$.status_code'}
+2023-09-13 02:27:59,597 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-13 02:27:59,597 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-13 02:27:59,613 D:\PycharmProjects\ApiTest\common\code\extract_data.py INFO 需要处理的值extract_response为{'status_code': 200}
+2023-09-13 02:27:59,613 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-13 02:27:59,613 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-13 02:27:59,613 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-13 02:27:59,613 D:\PycharmProjects\ApiTest\common\code\extract_data.py INFO 数据extract_response为None

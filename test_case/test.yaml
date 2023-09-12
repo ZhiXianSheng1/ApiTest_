@@ -1,0 +1,52 @@
+# 测试配置文件
+
+# Allure报告定制配置
+allure:
+  # 报告生成的目录
+  report_directory: "allure-report"
+
+  # 报告生成的名称格式
+  report_name_format: "{test_suite_name}_{timestamp}"
+
+  # 报告生成的描述
+  report_description: "Allure Report"
+
+  # 报告中的功能块显示设置
+  features:
+    # 显示所有功能块
+    show: true
+    # 每个功能块的展开/折叠状态
+    default_collapse: false
+    # 每个功能块的描述显示设置
+    descriptions:
+      - "Feature 1"
+      - "Feature 2"
+
+  # 报告中的测试用例显示设置
+testcases:
+  featrue: 登录模块
+  story: 新闻登录接口
+  title: 测试接口请求
+  is_run: True
+  log_extension: .log
+  mysql:
+    host: localhost
+    username: root
+    password: 123456
+    database: nba_test
+  request:
+    method: post
+    url: https://demo-api.apipost.cn/api/demo/login
+    headers:
+      Content-Type: application/json
+    data:
+      mobile: 18289454846
+      ver_code: 123456
+    # 显示所有测试用例
+    show: true
+    # 每个测试用例的展开/折叠状态
+    default_collapse: false
+    # 每个测试用例的描述显示设置
+    descriptions:
+      - "Test Case 1"
+      - "Test Case 2"

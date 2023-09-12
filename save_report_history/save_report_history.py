@@ -25,7 +25,6 @@ class Get_History:
         path4 = BASE_DIR + os.sep + r"reports\report\widgets\history-trend.json"
         path5 = BASE_DIR + os.sep + r"reports\report\history\history-trend.json"
         path6 = os.path.dirname(path5) + os.sep
-        print(BASE_DIR)
         # 先判断是否为第一次生成（如果该目录下没有history-trend.json文件则为第一次）
         if os.path.exists(path1):
             print('文件存在')
@@ -67,48 +66,3 @@ class Get_History:
                 os.system(cmd)
             else:
                 print('未找到相关测试记录文件，请先执行测试')
-
-# class Get_History:
-#     def get_history(self):
-#         # 先判断是否为第一次生成（如果该目录下没有history-trend.json文件则为第一次）
-#         if os.path.exists(
-#                 # r"D:\PycharmProjects\ApiTest\reports\report\history\history-trend.json"):
-#                 r"D:\PycharmProjects\ApiTest\save_report_history\old_report\history-trend.json"):
-#             print('文件存在')
-#             # 如果存在文件，则读取现有文件，将新生成的文件加入到现有文件中，再将处理后的文件复制到报告目录下
-#             # 打开json文件获取数据
-#             f = open(r"D:\PycharmProjects\ApiTest\save_report_history\old_report\history-trend.json")
-#             old_history_list = json.load(f)
-#             # print(f'旧的json文件为{old_history_list}')
-#
-#             # 获取新生成的history文件数据
-#             f1 = open(r"D:\PycharmProjects\ApiTest\reports\report\history\history-trend.json")
-#             new_history_list = json.load(f1)
-#             # print(f'新的json文件为{new_history_list}')
-#
-#             # 遍历新的history文件，文件处理，依次加入到旧的文件中
-#             for i in new_history_list:
-#                 # print(i)
-#                 old_history_list.append(i)
-#             # 覆盖写入数据至保存历史数据文件中
-#             with open(r"D:\PycharmProjects\ApiTest\save_report_history\old_report\history-trend.json", "w") as f:
-#                 json.dump(old_history_list, f)
-#
-#             s = open(r'D:\PycharmProjects\ApiTest\save_report_history\old_report\history-trend.json')
-#             total_history_data = json.load(s)[::-1]  # 获取倒序的历史总文件
-#             filename = r'D:\PycharmProjects\ApiTest\save_report_history\old_report\history-trend_desc.json'  # 指定文件名创建倒序文件
-#             with open(filename, 'w') as f:
-#                 json.dump(total_history_data, f)
-#
-#             # 将写入后的倒叙文件复制到报告文件中
-#             cmd = rf'copy {filename} D:\PycharmProjects\ApiTest\reports\report\widgets\history-trend.json'
-#             os.system(cmd)
-#
-#         else:
-#             print("第一次执行测试？")
-#             if os.path.exists(r'D:\PycharmProjects\ApiTest\reports\report\history\history-trend.json'):
-#                 print('获取最新数据为第一版,从报告目录复制文件到历史文件保存目录')
-#                 cmd = r'D: && cd D:\PycharmProjects\ApiTest\reports\report\history\ && copy /y history-trend.json D:\PycharmProjects\ApiTest\save_report_history\old_report\history-trend.json'
-#                 os.system(cmd)
-#             else:
-#                 print('未找到相关测试记录文件，请先执行测试')

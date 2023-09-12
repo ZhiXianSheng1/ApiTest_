@@ -1,11 +1,22 @@
 [
   {
-    "uid": "fdc7dc01919216f6",
-    "name": "test_main[case_data0]",
+    "uid": "c2fcbb17e4b161a6",
+    "name": "测试接口请求",
     "time": {
-      "start": 1694531420082,
-      "stop": 1694531420551,
-      "duration": 469
+      "start": 1694543278473,
+      "stop": 1694543279957,
+      "duration": 1484
+    },
+    "status": "passed",
+    "severity": "normal"
+  },
+  {
+    "uid": "d788c66e32be2fa6",
+    "name": "测试接口请求",
+    "time": {
+      "start": 1694543279957,
+      "stop": 1694543281441,
+      "duration": 1484
     },
     "status": "passed",
     "severity": "normal"

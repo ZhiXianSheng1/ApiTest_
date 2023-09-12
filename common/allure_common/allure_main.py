@@ -40,5 +40,4 @@ class GetReport:
 
 
 if __name__ == '__main__':
-    # gt = GetReport()
     GetReport().get_report()

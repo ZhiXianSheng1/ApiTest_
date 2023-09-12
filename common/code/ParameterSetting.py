@@ -75,6 +75,5 @@ class ParameterSetting:
         Logger.my_log().info(f'新增参数值为：{extract_value}')
         return extract_value
 
-# if __name__ == '__main__':
-#     param_pool.clear()
-#     print(param_pool.parameters)
+if __name__ == '__main__':
+    print(param_pool.parameters)

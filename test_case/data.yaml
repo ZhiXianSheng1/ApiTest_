@@ -31,54 +31,23 @@
   assert_expression:
     - status_code == $.status_code
     - code == $.body.code
-#用例标题:
-#  featrue: 新闻列表
-#  story: 新闻接口内容
-#  title: 测试接口请求
-#  is_run: True
-#  request:
-#    method: post
-#    url: https://ticket.pescms.com?a=ticket&m=Submit
-#    data:
-#      Name: 曾高格
-#      number: STJFD73570626158
-#      contact: 2
-#      contact_account: zgg@xxoo.com
-#      title: 11122
-#      product: 2
-#      type: 1
-#      token: e52162d042b53bebd3f9c7f152355a79_4736784894164
-#    Params:
-#      a: ticket
-#      m: Submit
-#    headers:
-#      Content-Type: application/x-www-form-urlencoded; charset=UTF-8
-##      token: $.token
-#      Cookie: PESTKSESSION=hrss636p8tsnemp370g26rftvd; Hm_lvt_f0690aac15345cc1534fd2979a477c1e=1692905952; Hm_lpvt_f0690aac15345cc1534fd2979a477c1e=1692914323
-#      User-Agent: PostmanRuntime/7.32.3
-#
-#  assert_expression:
-#    - status_code == $.status_code
-#    - code == $.body.code
-
-
-#水果标题:
-#  featrue: 新闻列表
-#  story: 新闻接口内容
-#  title: 测试接口请求
-#  is_run: True
-#  request:
-#    method: get
-#    url: https://demo-api.apipost.cn/api/demo/news_list?mobile=18289454846&theme_news=国际新闻&page=1&pageSize=20
-#    data:
-#      mobile: $.testcase_pool.mobile
-#      theme_news: 国际新闻
-#      page: 1
-#      pageSize: 20
-#    headers:
-#      'Content-Type': $.testcase_code.Content-Type
-#    token: $.token
-#    params: null
-#  assert_expression:
-#    - status_code == $.status_code
-#    - code == $.body.code
+水果标题:
+  featrue: 新闻列表
+  story: 新闻接口内容
+  title: 测试接口请求
+  is_run: True
+  request:
+    method: get
+    url: https://demo-api.apipost.cn/api/demo/news_list?mobile=18289454846&theme_news=国际新闻&page=1&pageSize=20
+    data:
+      mobile: $.testcase_pool.mobile
+      theme_news: 国际新闻
+      page: 1
+      pageSize: 20
+    headers:
+      'Content-Type': $.testcase_code.Content-Type
+    token: $.token
+    params: null
+  assert_expression:
+    - status_code == $.status_code
+    - code == $.body.code
