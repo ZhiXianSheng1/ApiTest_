@@ -1,3 +1,2 @@
 "Status","Start Time"                  ,"Stop Time"                   ,"Duration in ms","Parent Suite","Suite"    ,"Sub Suite","Test Class","Test Method","Name"                 ,"Description"
-"passed","Sat Sep 09 15:56:17 CST 2023","Sat Sep 09 15:56:18 CST 2023","402"           ,"script"      ,"test_case",""         ,""          ,""           ,"test_main[case_data1]",""
-"passed","Sat Sep 09 15:56:16 CST 2023","Sat Sep 09 15:56:17 CST 2023","704"           ,"script"      ,"test_case",""         ,""          ,""           ,"test_main[case_data0]",""
+"passed","Tue Sep 12 23:10:20 CST 2023","Tue Sep 12 23:10:20 CST 2023","469"           ,"script"      ,"test_case",""         ,""          ,""           ,"test_main[case_data0]",""

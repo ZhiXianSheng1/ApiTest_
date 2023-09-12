@@ -46,13 +46,13 @@ class Request:
         return cls.requests_api(url=url, method="delete", **kwargs)
 
 
-if __name__ == '__main__':
-    data = {
-        'mobile': '18289454846',
-        'ver_code': '123456'
-    }
-    re = Request.post(url='https://demo-api.apipost.cn/api/demo/login', data=data)
-    print(re)
+# if __name__ == '__main__':
+#     data = {
+#         'mobile': '18289454846',
+#         'ver_code': '123456'
+#     }
+#     re = Request.post(url='https://demo-api.apipost.cn/api/demo/login', data=data)
+#     print(re)
 """
 class Requests:
     @classmethod

@@ -12,11 +12,8 @@
 
 如果不存在 --- 说明为第一次执行测试， 具体操作步骤为： 复制测试报告文件到历史文件中 作为首次记录
 """
-
 import json
 import os
-
-
 class Get_History:
     def get_history(self):
         current = os.path.abspath(__file__)  # 当前路径
@@ -28,7 +25,7 @@ class Get_History:
         path4 = BASE_DIR + os.sep + r"reports\report\widgets\history-trend.json"
         path5 = BASE_DIR + os.sep + r"reports\report\history\history-trend.json"
         path6 = os.path.dirname(path5) + os.sep
-        # print(path6)
+        print(BASE_DIR)
         # 先判断是否为第一次生成（如果该目录下没有history-trend.json文件则为第一次）
         if os.path.exists(path1):
             print('文件存在')

@@ -93,3 +93,555 @@
 2023-09-12 16:17:41,723 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
 2023-09-12 16:17:41,723 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
 2023-09-12 16:17:41,738 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 16:48:53,551 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDUxOTM0MiwiaXNzIjoicHJvOTExIn0.OHf5p4IgT2AA1vgzZxUCiG3CyNcx2D9wMqfImbBJ9D8'}, 'msg': 'success'}}
+2023-09-12 16:48:53,551 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 16:48:53,551 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 16:48:53,551 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 16:48:53,551 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 16:48:53,551 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 16:48:53,551 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 16:48:53,551 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 16:48:53,551 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 16:48:53,551 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 16:48:53,551 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 16:48:53,567 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 16:48:53,567 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 16:48:53,567 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 16:48:53,567 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 16:48:53,567 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 16:48:53,567 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 16:48:53,567 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 16:48:53,567 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 16:48:53,567 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 16:48:53,567 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 16:48:53,567 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 16:48:53,567 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 16:54:33,597 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDUxOTY4MiwiaXNzIjoicHJvOTExIn0.63uC3moyHl79nLkNgcLA3G8plgun5GLN2VZJv3fhwlU'}, 'msg': 'success'}}
+2023-09-12 16:54:33,597 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 16:54:33,597 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 16:54:33,597 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 16:54:33,597 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 16:54:33,597 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 16:54:33,597 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 16:54:33,597 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 16:54:33,597 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 16:54:33,597 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 16:54:33,597 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 16:54:33,597 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 16:54:33,597 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 16:54:33,597 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 16:54:33,597 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 16:54:33,597 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 16:54:33,597 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 16:54:33,612 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 16:54:33,612 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 16:54:33,612 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 16:54:33,612 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 16:54:33,612 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 16:54:33,612 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 17:03:09,080 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDUyMDE5NywiaXNzIjoicHJvOTExIn0.V7vMJT9hDG2jx784A8rnj7yuQy6sQvkuUV9M4WBAisE'}, 'msg': 'success'}}
+2023-09-12 17:03:09,096 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 17:03:09,096 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 17:03:09,096 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 17:03:09,096 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 17:03:09,096 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 17:03:09,096 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 17:03:09,096 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 17:03:09,096 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 17:03:09,111 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 17:03:09,111 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 17:03:09,111 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 17:03:09,111 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 17:03:09,111 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 17:03:09,111 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 17:03:09,111 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 17:03:09,111 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 17:03:09,111 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 17:03:09,111 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 17:03:09,111 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 17:03:09,111 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 17:03:09,111 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 17:03:09,127 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 21:47:32,488 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDUzNzI1MSwiaXNzIjoicHJvOTExIn0.YTwzB3USv3i7CNzXI3vT60UmKZhDEKU6DlpHX-iBewk'}, 'msg': 'success'}}
+2023-09-12 21:47:32,488 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 21:47:32,488 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 21:47:32,488 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 21:47:32,503 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 21:47:32,503 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 21:47:32,503 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 21:47:32,503 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 21:47:32,503 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 21:47:32,503 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 21:47:32,503 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 21:47:32,503 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 21:47:32,503 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 21:47:32,503 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 21:47:32,503 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 21:47:32,503 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 21:47:32,503 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 21:47:32,503 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 21:47:32,503 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 21:47:32,503 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 21:47:32,503 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 21:47:32,503 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 21:47:32,519 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 21:48:32,205 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDUzNzMxMSwiaXNzIjoicHJvOTExIn0.1uJYZjgdwNK4GG-WstT439eJNw7piXv4yNp29ZkOqfk'}, 'msg': 'success'}}
+2023-09-12 21:48:32,205 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 21:48:32,220 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 21:48:32,220 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 21:48:32,220 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 21:48:32,220 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 21:48:32,220 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 21:48:32,220 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 21:48:32,220 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 21:48:32,220 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 21:48:32,220 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 21:48:32,220 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 21:48:32,220 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 21:48:32,220 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 21:48:32,220 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 21:48:32,220 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 21:48:32,220 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 21:48:32,220 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 21:48:32,220 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 21:48:32,220 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 21:48:32,236 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 21:48:32,236 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 21:48:32,236 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 21:49:05,429 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDUzNzM0NCwiaXNzIjoicHJvOTExIn0.H_Riog32W3NId9GQqkJ5xdNEPjC1KZxb2M8OQBzAy8A'}, 'msg': 'success'}}
+2023-09-12 21:49:05,429 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 21:49:05,429 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 21:49:05,429 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 21:49:05,429 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 21:49:05,429 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 21:49:05,429 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 21:49:05,429 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 21:49:05,429 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 21:49:05,429 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 21:49:05,429 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 21:49:05,429 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 21:49:05,429 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 21:49:05,429 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 21:49:05,429 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 21:49:05,444 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 21:49:05,444 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 21:49:05,444 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 21:49:05,444 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 21:49:05,444 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 21:49:05,444 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 21:49:05,444 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 21:49:05,444 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 22:23:48,850 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDUzOTQyOCwiaXNzIjoicHJvOTExIn0.0jsFRWXeLjMAd2enzKVvBOiE5XZl4Kk6EEhycI8OAZM'}, 'msg': 'success'}}
+2023-09-12 22:23:48,850 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 22:23:48,850 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 22:23:48,850 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 22:23:48,850 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 22:23:48,850 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:23:48,850 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 22:23:48,850 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 22:23:48,850 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:23:48,850 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:23:48,850 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:23:48,866 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:23:48,866 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:23:48,866 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:23:48,866 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 22:23:48,866 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 22:23:48,866 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 22:23:48,866 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 22:23:48,866 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 22:23:48,866 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 22:23:48,866 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 22:23:48,866 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 22:23:48,866 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 22:24:19,603 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDUzOTQ1OSwiaXNzIjoicHJvOTExIn0.YRDJhkMNYc9WpRVv6D5dLEMWWZp6QowMCDISSKtGOiI'}, 'msg': 'success'}}
+2023-09-12 22:24:19,603 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 22:24:19,603 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 22:24:19,603 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 22:24:19,603 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 22:24:19,603 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:24:19,603 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 22:24:19,619 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 22:24:19,619 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:24:19,619 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:24:19,619 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:24:19,619 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:24:19,619 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:24:19,619 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:24:19,619 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 22:24:19,619 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 22:24:19,619 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 22:24:19,619 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 22:24:19,619 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 22:24:19,619 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 22:24:19,619 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 22:24:19,619 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 22:24:19,635 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 22:28:04,019 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDUzOTY4MywiaXNzIjoicHJvOTExIn0.zA2gI0D3MFHpSAMRrtAi3VrI5BC-L-BUMtN7h25IfPs'}, 'msg': 'success'}}
+2023-09-12 22:28:04,019 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 22:28:04,019 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 22:28:04,019 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 22:28:04,019 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 22:28:04,019 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:28:04,019 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 22:28:04,034 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 22:28:04,034 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:28:04,034 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:28:04,034 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:28:04,034 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:28:04,034 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:28:04,034 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:28:04,034 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 22:28:04,034 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 22:28:04,034 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 22:28:04,034 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 22:28:04,034 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 22:28:04,034 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 22:28:04,034 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 22:28:04,034 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 22:28:04,034 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 22:29:58,975 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDUzOTc5OCwiaXNzIjoicHJvOTExIn0.zL5YLnggeJQzkl0cnv7TpK6C9tBbcF6FPB464onKmfs'}, 'msg': 'success'}}
+2023-09-12 22:29:58,991 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 22:29:58,991 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 22:29:58,991 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 22:29:58,991 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 22:29:58,991 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:29:58,991 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 22:29:58,991 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 22:29:58,991 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:29:58,991 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:29:58,991 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:29:58,991 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:29:58,991 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:29:58,991 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:29:58,991 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 22:29:58,991 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 22:29:59,006 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 22:29:59,006 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 22:29:59,006 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 22:29:59,006 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 22:29:59,006 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 22:29:59,006 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 22:29:59,006 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 22:30:21,053 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDUzOTgyMCwiaXNzIjoicHJvOTExIn0.zrvrh_J0zeI-0ncJtUzGillLtU0iXlDgCSEcRSLDRu4'}, 'msg': 'success'}}
+2023-09-12 22:30:21,069 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 22:30:21,069 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 22:30:21,069 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 22:30:21,069 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 22:30:21,084 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:30:21,084 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 22:30:21,084 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 22:30:21,084 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:30:21,084 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:30:21,084 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:30:21,084 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:30:21,084 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:30:21,084 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:30:21,084 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 22:30:21,084 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 22:30:21,084 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 22:30:21,084 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 22:30:21,084 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 22:30:21,084 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 22:30:21,084 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 22:30:21,100 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 22:30:21,100 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 22:46:24,503 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDU0MDc4NCwiaXNzIjoicHJvOTExIn0.MF-MswElI2RGCnuYr5rRFLaJWaLS5_bbp0EVO802jUY'}, 'msg': 'success'}}
+2023-09-12 22:46:24,503 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 22:46:24,503 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 22:46:24,503 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 22:46:24,503 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 22:46:24,503 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:46:24,518 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 22:46:24,518 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 22:46:24,518 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:46:24,518 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:46:24,518 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:46:24,518 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:46:24,518 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:46:24,518 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:46:24,518 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 22:46:24,518 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 22:46:24,518 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 22:46:24,518 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 22:46:24,518 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 22:46:24,518 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 22:46:24,518 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 22:46:24,518 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 22:46:24,534 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 22:46:51,723 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDU0MDgxMSwiaXNzIjoicHJvOTExIn0.1tmXcS6WLXBrxVOWmWvIr-ttFttIpcYVoT1uS7ie8CI'}, 'msg': 'success'}}
+2023-09-12 22:46:51,723 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 22:46:51,723 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 22:46:51,723 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 22:46:51,723 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 22:46:51,723 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:46:51,723 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 22:46:51,723 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 22:46:51,738 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:46:51,738 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:46:51,738 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:46:51,738 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:46:51,738 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:46:51,738 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:46:51,738 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 22:46:51,738 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 22:46:51,738 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 22:46:51,738 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 22:46:51,738 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 22:46:51,738 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 22:46:51,738 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 22:46:51,738 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 22:46:51,738 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 22:49:36,859 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDU0MDk3NiwiaXNzIjoicHJvOTExIn0.wqS3jx7yZDUGJpv3d-_2pvI8eiAB2CpGlmejXv42LCc'}, 'msg': 'success'}}
+2023-09-12 22:49:36,859 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 22:49:36,859 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 22:49:36,859 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 22:49:36,859 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 22:49:36,874 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:49:36,874 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 22:49:36,874 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 22:49:36,874 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:49:36,874 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:49:36,874 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:49:36,874 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:49:36,874 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:49:36,874 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:49:36,874 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 22:49:36,874 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 22:49:36,874 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 22:49:36,874 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 22:49:36,874 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 22:49:36,874 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 22:49:36,874 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 22:49:36,874 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 22:49:36,890 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 22:51:06,083 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDU0MTA2NiwiaXNzIjoicHJvOTExIn0.fs-_qPegXM37bpkn8XMripLftNuJu3k3LcLL9QiUYMA'}, 'msg': 'success'}}
+2023-09-12 22:51:06,083 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 22:51:06,083 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 22:51:06,099 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 22:51:06,099 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 22:51:06,099 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:51:06,099 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 22:51:06,099 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 22:51:06,099 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:51:06,099 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:51:06,099 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:51:06,099 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:51:06,099 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:51:06,099 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:51:06,099 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 22:51:06,099 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 22:51:06,099 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 22:51:06,099 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 22:51:06,099 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 22:51:06,099 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 22:51:06,114 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 22:51:06,114 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 22:51:06,114 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 22:52:16,224 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDU0MTEzNiwiaXNzIjoicHJvOTExIn0.BerK_Ap6qqA6m_ph-fypa3wJa8MOGfUJiAMcGAD4_kI'}, 'msg': 'success'}}
+2023-09-12 22:52:16,224 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 22:52:16,240 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 22:52:16,240 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 22:52:16,240 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 22:52:16,240 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:52:16,240 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 22:52:16,240 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 22:52:16,240 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:52:16,240 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:52:16,240 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:52:16,240 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:52:16,240 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:52:16,240 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:52:16,240 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 22:52:16,240 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 22:52:16,240 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 22:52:16,240 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 22:52:16,240 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 22:52:16,255 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 22:52:16,255 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 22:52:16,255 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 22:52:16,255 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 22:53:39,094 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDU0MTIxOSwiaXNzIjoicHJvOTExIn0.nTgcxmqnXgswbWKn331krlGlHqWr3zSbxHmBCZJntc0'}, 'msg': 'success'}}
+2023-09-12 22:53:39,109 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 22:53:39,109 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 22:53:39,109 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 22:53:39,109 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 22:53:39,109 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:53:39,109 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 22:53:39,109 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 22:53:39,109 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:53:39,109 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:53:39,109 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:53:39,109 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:53:39,109 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:53:39,109 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:53:39,109 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 22:53:39,109 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 22:53:39,109 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 22:53:39,125 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 22:53:39,125 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 22:53:39,125 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 22:53:39,125 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 22:53:39,125 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 22:53:39,125 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 22:54:34,252 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDU0MTI3NCwiaXNzIjoicHJvOTExIn0.ehVTykdISSGXYiU3XgP2jvUt3X2fn2NMEpRFswf0FMc'}, 'msg': 'success'}}
+2023-09-12 22:54:34,252 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 22:54:34,252 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 22:54:34,252 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 22:54:34,252 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 22:54:34,252 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:54:34,252 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 22:54:34,252 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 22:54:34,268 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:54:34,268 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:54:34,268 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:54:34,268 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:54:34,268 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:54:34,268 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:54:34,268 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 22:54:34,268 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 22:54:34,268 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 22:54:34,268 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 22:54:34,268 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 22:54:34,268 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 22:54:34,268 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 22:54:34,268 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 22:54:34,268 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 22:55:33,521 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDU0MTMzMywiaXNzIjoicHJvOTExIn0.c3WeBkb5jQkW0g6hdPev8hyVxrQPJSrvCDzuWPWRClE'}, 'msg': 'success'}}
+2023-09-12 22:55:33,521 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 22:55:33,537 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 22:55:33,537 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 22:55:33,537 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 22:55:33,537 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:55:33,537 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 22:55:33,537 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 22:55:33,537 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:55:33,537 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:55:33,537 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 22:55:33,537 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:55:33,537 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 22:55:33,537 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 22:55:33,537 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 22:55:33,537 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 22:55:33,537 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 22:55:33,537 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 22:55:33,537 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 22:55:33,553 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 22:55:33,553 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 22:55:33,553 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 22:55:33,553 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 23:00:36,904 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDU0MTYzNiwiaXNzIjoicHJvOTExIn0.LqWmxH2_Ez97XpgwE8Kvnfj6ArAKDmjV60SL-KIE8eM'}, 'msg': 'success'}}
+2023-09-12 23:00:36,919 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 23:00:36,919 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 23:00:36,919 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 23:00:36,919 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 23:00:36,919 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 23:00:36,919 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 23:00:36,919 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 23:00:36,919 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 23:00:36,919 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 23:00:36,919 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 23:00:36,919 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 23:00:36,919 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 23:00:36,919 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 23:00:36,919 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 23:00:36,935 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 23:00:36,935 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 23:00:36,935 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 23:00:36,935 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 23:00:36,935 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 23:00:36,935 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 23:00:36,935 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 23:00:36,935 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 23:04:17,687 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDU0MTg1NywiaXNzIjoicHJvOTExIn0.hRlR1sTazFt_yXYh1CSeuW8y9BF6KhTe8-BkTrhTYQc'}, 'msg': 'success'}}
+2023-09-12 23:04:17,687 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 23:04:17,687 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 23:04:17,687 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 23:04:17,687 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 23:04:17,687 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 23:04:17,687 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 23:04:17,687 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 23:04:17,687 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 23:04:17,687 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 23:04:17,687 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 23:04:17,687 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 23:04:17,687 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 23:04:17,687 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 23:04:17,687 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 23:04:17,687 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 23:04:17,703 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 23:04:17,703 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 23:04:17,703 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 23:04:17,703 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 23:04:17,703 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 23:04:17,703 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 23:04:17,703 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 23:05:54,248 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDU0MTk1NCwiaXNzIjoicHJvOTExIn0.K0ocHXmxfSqbjCyDsJ5d9YfcAbo00UPyuD8UZ9MNX3A'}, 'msg': 'success'}}
+2023-09-12 23:05:54,248 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 23:05:54,248 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 23:05:54,248 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 23:05:54,248 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 23:05:54,248 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 23:05:54,248 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 23:05:54,248 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 23:05:54,264 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 23:05:54,264 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 23:05:54,264 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 23:05:54,264 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 23:05:54,264 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 23:05:54,264 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 23:05:54,264 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 23:05:54,264 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 23:05:54,264 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 23:05:54,264 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 23:05:54,264 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 23:05:54,264 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 23:05:54,264 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 23:05:54,264 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 23:05:54,264 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 23:09:50,991 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDU0MjE5MSwiaXNzIjoicHJvOTExIn0.bTaPQACAxVMerUz2RWt67dZ9GxlnMETJZ-7MuNAzsu8'}, 'msg': 'success'}}
+2023-09-12 23:09:50,991 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 23:09:50,991 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 23:09:50,991 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 23:09:50,991 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 23:09:50,991 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 23:09:50,991 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 23:09:50,991 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 23:09:50,991 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 23:09:50,991 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 23:09:51,007 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 23:09:51,007 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 23:09:51,007 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 23:09:51,007 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 23:09:51,007 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 23:09:51,007 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 23:09:51,007 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 23:09:51,007 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 23:09:51,007 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 23:09:51,007 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 23:09:51,007 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 23:09:51,007 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 23:09:51,007 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！
+2023-09-12 23:10:20,519 D:\PycharmProjects\ApiTest\common\code\case.py INFO response请求为：{'status_code': 200, 'body': {'code': 10000, 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGUiOiIxODI4OTQ1NDg0NiIsInZlcl9jb2RlIjoi8J6JgCIsImV4cCI6MTY5NDU0MjIyMCwiaXNzIjoicHJvOTExIn0.Bs2Q72CTkEucPvbsRbgDJFWUt5y382HeWmK2pvrTkPk'}, 'msg': 'success'}}
+2023-09-12 23:10:20,519 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_key的值为{'status_code': '$.status_code'}
+2023-09-12 23:10:20,519 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'status_code': '$.status_code'}
+2023-09-12 23:10:20,519 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'status_code': '$.status_code'}
+2023-09-12 23:10:20,519 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'status_code': 200}
+2023-09-12 23:10:20,535 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 23:10:20,535 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 status_code=200 到testcase_pool工作池中
+2023-09-12 23:10:20,535 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'status_code': 200}存于testcase_pool工作空间成功！
+2023-09-12 23:10:20,535 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_request的值为{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 23:10:20,535 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 23:10:20,535 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO extract_response的值为：{'mobile': '$.request.data.mobile', 'ver_code': '$.request.data.ver_code', 'Content-Type': '$.request.headers.Content-Type', 'host': '$.mysql.host', 'username': '$.mysql.username', 'password': '$.mysql.password', 'database': '$.mysql.database', 'log_extension': '$.log_extension'}
+2023-09-12 23:10:20,535 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO 新增参数值为：{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 23:10:20,535 D:\PycharmProjects\ApiTest\common\code\case.py INFO extract_value的值存在{'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}
+2023-09-12 23:10:20,535 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 正在写入参数
+2023-09-12 23:10:20,535 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 mobile=18289454846 到testcase_pool工作池中
+2023-09-12 23:10:20,535 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 ver_code=123456 到testcase_pool工作池中
+2023-09-12 23:10:20,535 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 Content-Type=application/json 到testcase_pool工作池中
+2023-09-12 23:10:20,535 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 host=localhost 到testcase_pool工作池中
+2023-09-12 23:10:20,535 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 username=root 到testcase_pool工作池中
+2023-09-12 23:10:20,535 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 password=123456 到testcase_pool工作池中
+2023-09-12 23:10:20,535 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 database=nba_test 到testcase_pool工作池中
+2023-09-12 23:10:20,535 D:\PycharmProjects\ApiTest\common\code\__init__.py INFO 保存 log_extension=.log 到testcase_pool工作池中
+2023-09-12 23:10:20,551 D:\PycharmProjects\ApiTest\common\code\ParameterSetting.py INFO {'mobile': 18289454846, 'ver_code': 123456, 'Content-Type': 'application/json', 'host': 'localhost', 'username': 'root', 'password': 123456, 'database': 'nba_test', 'log_extension': '.log'}存于testcase_pool工作空间成功！

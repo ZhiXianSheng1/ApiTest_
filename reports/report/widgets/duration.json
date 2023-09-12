@@ -1,22 +1,11 @@
 [
   {
-    "uid": "8e1f4ecbb64f9f08",
-    "name": "test_main[case_data1]",
-    "time": {
-      "start": 1694246177598,
-      "stop": 1694246178000,
-      "duration": 402
-    },
-    "status": "passed",
-    "severity": "normal"
-  },
-  {
-    "uid": "461ff9c2c57920d0",
+    "uid": "fdc7dc01919216f6",
     "name": "test_main[case_data0]",
     "time": {
-      "start": 1694246176890,
-      "stop": 1694246177594,
-      "duration": 704
+      "start": 1694531420082,
+      "stop": 1694531420551,
+      "duration": 469
     },
     "status": "passed",
     "severity": "normal"

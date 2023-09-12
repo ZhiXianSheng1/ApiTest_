@@ -62,23 +62,23 @@
 #    - code == $.body.code
 
 
-水果标题:
-  featrue: 新闻列表
-  story: 新闻接口内容
-  title: 测试接口请求
-  is_run: True
-  request:
-    method: get
-    url: https://demo-api.apipost.cn/api/demo/news_list?mobile=18289454846&theme_news=国际新闻&page=1&pageSize=20
-    data:
-      mobile: $.testcase_pool.mobile
-      theme_news: 国际新闻
-      page: 1
-      pageSize: 20
-    headers:
-      'Content-Type': $.testcase_code.Content-Type
-    token: $.token
-    params: null
-  assert_expression:
-    - status_code == $.status_code
-    - code == $.body.code
+#水果标题:
+#  featrue: 新闻列表
+#  story: 新闻接口内容
+#  title: 测试接口请求
+#  is_run: True
+#  request:
+#    method: get
+#    url: https://demo-api.apipost.cn/api/demo/news_list?mobile=18289454846&theme_news=国际新闻&page=1&pageSize=20
+#    data:
+#      mobile: $.testcase_pool.mobile
+#      theme_news: 国际新闻
+#      page: 1
+#      pageSize: 20
+#    headers:
+#      'Content-Type': $.testcase_code.Content-Type
+#    token: $.token
+#    params: null
+#  assert_expression:
+#    - status_code == $.status_code
+#    - code == $.body.code
