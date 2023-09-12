@@ -1,8 +1,4 @@
-import ast
-
 from jsonpath import jsonpath
-
-
 class Assert:
     @classmethod
     def assert_resonse(cls, api_response: dict, assert_list: list):

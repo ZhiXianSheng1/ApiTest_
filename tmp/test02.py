@@ -1,7 +1,5 @@
 import logging
 import os
-import time
-
 
 class Logger:
     def __init__(self, log_name='log.log', log_path=None):
@@ -22,7 +20,7 @@ class Logger:
         if log_path:
             log_dir = log_path
         else:
-            log_dir = os.path.join(os.path.dirname(__file__), 'logs')
+            log_dir = os.path.join(os.path.dirname(__file__), '../logs')
         if not os.path.exists(log_dir):
             os.makedirs(log_dir)
         return os.path.join(log_dir, log_name)
@@ -49,11 +47,10 @@ class Logger:
 
         return self.logger
 
-
-if __name__ == '__main__':
-    Logger.my_log(Logger()).info("this is info log")
-    Logger.my_log(Logger()).warning("阿达asdad")
-    Logger.my_log(Logger(), log_level='ERROR').error("this is error log")
-    # Logger.my_log(Logger()).warning("阿达asdad")
-    # Logger.my_log(log_level='ERROR').error("this 诗词大赛")
-    # Logger.my_log(log_level='ERROR').error("this 诗33词大赛")
+# if __name__ == '__main__':
+#     Logger.my_log(Logger()).info("this is info log")
+#     Logger.my_log(Logger()).warning("阿达asdad")
+#     Logger.my_log(Logger(), log_level='ERROR').error("this is error log")
+# Logger.my_log(Logger()).warning("阿达asdad")
+# Logger.my_log(log_level='ERROR').error("this 诗词大赛")
+# Logger.my_log(log_level='ERROR').error("this 诗33词大赛")

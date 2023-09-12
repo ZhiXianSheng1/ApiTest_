@@ -8,7 +8,7 @@ logger.setLevel(logging.DEBUG)
 # 3、创建handler
 fh_stream = logging.StreamHandler()
 # 写入文件
-fh_file = logging.FileHandler("./test.log")
+fh_file = logging.FileHandler("test.log")
 # 4、设置日志级别
 fh_stream.setLevel(logging.DEBUG)
 fh_file.setLevel(logging.WARNING)

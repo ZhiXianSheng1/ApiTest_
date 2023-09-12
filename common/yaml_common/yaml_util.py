@@ -1,8 +1,8 @@
 import os
 import sys
 import yaml
-from common.YamlPath import YamlPath
 
+from common.file_common.FilePath_util import FilePath
 
 class YamlReader:
     _data = None
@@ -45,14 +45,14 @@ class YamlReader:
     :param yaml_name:test_case里的yaml文件eg:'data.yaml'
     :return:
     """
-        if yaml_name not in YamlPath.yaml_dirpath():
+        if yaml_name not in FilePath.yaml_dirpath():
             try:
                 print('\033[91m' + f"{yaml_name}未定义,请检查!" + '\033[0m')  # 改变打印的颜色
                 # fp = YamlPath.yaml_dirpath()[yaml_name]
             except KeyError as e:
                 cls.handle_key_error(e, yaml_name)
         else:
-            case_data = cls.read_data(YamlPath.yaml_dirpath()[f'{yaml_name}'])
+            case_data = cls.read_data(FilePath.yaml_dirpath()[f'{yaml_name}'])
             # print(case_data)
 
             for k, v in case_data.items():  # 将yaml第一行的用例标题移到字典里，赋名case_name
@@ -89,3 +89,13 @@ class YamlReader:
         with open(self.yamlf, "w") as f:
             yaml.dump(data, f)
         return data
+# if __name__ == '__main__':
+#     import sys
+#
+#     path = os.path.abspath(__file__)
+#     path1 = os.path.dirname(path)
+#     if path in sys.path:
+#         print(path)
+#     else:
+#         print(path)
+#         print(sys.path)
