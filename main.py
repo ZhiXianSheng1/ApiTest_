@@ -1,4 +1,4 @@
-from common import GetReport
+from common.allure_common.allure_main import GetReport
 
 if __name__ == '__main__':
 
